@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <link rel="shortcut icon" href="./assets/coin.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind CSS config
+      tailwind.config = {
+        theme: {
+          fontFamily: { lexend: ["Lexend", "system-ui"] },
+          extend: { colors: { lightGreen: "#b4f461" } },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="backdrop-blur-md bg-white/30 z-10">
+        <div class="navbar bg-yellow-50 p-7">
+          <div class="navbar-start">
+            <a id="blog-btn" class="btn bg-lightGreen font-bold text-xl"
+              >Blog</a
+            >
+            <!-- Blog link -->
+          </div>
+          <div class="navbar-center lg:flex">
+            <div class="flex gap-3 items-center">
+              <img class="max-w-10" src="./assets/logo.png" alt="Logo" />
+              <!-- Logo -->
+              <p class="hidden lg:block font-bold text-2xl">
+                Donate Bangladesh
+              </p>
+              <!-- Title -->
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div class="flex items-center gap-1 font-semibold">
+              <img class="mr-2" src="./assets/coin.png" alt="Coin" />
+              <p class="text-xl"><span id="my-balance">5500</span> BDT</p>
+              <!-- Balance -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="faq">
+      <h1 class="font-extrabold text-5xl my-10">Important FAQ</h1>
+      <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The DOM is a tree structure representing a document. It provides
+              methods for accessing and manipulating nodes. Understanding it is
+              essential for creating dynamic web pages.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Use getElementById for unique IDs, getElementsByClassName for
+              classes, and getElementsByTagName for tags. For more complex
+              selectors, use querySelector or querySelectorAll with CSS syntax.
+              These methods return the selected element(s) for manipulation.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and styles using
+            the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Event delegation: Efficiently handles events on multiple elements
+              by attaching a single event listener to a parent element and using
+              event bubbling to determine the target. Styles using DOM:
+              Dynamically modify element styles using JavaScript by accessing
+              the style property and setting CSS properties. For example,
+              element.style.backgroundColor = "red".
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and element's
+            attributes and styles using the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Manipulating Attributes: Get, set, or remove attributes using
+              getAttribute(), setAttribute(), and removeAttribute().
+              Manipulating Styles: Set inline styles directly, add/remove
+              classes for pre-defined styles, or get computed styles using
+              getComputedStyle().
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
